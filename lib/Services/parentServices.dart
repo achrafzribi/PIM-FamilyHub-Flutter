@@ -1,9 +1,9 @@
 import 'package:http/http.dart' as http;
 
-Future<void> registerPartenaire(String username, String email, String password, String phoneNumber) async {
+Future<void> registerParent(String username, String email, String password, String phoneNumber) async {
   try {
     // Define the endpoint URL
-    final url = Uri.parse('http://10.0.2.2:9090/partenaire/register');
+    final url = Uri.parse('http://10.0.2.2:9090/parent/register');
 
     // Prepare the request body
     final Map<String, String> body = {
@@ -30,6 +30,6 @@ Future<void> registerPartenaire(String username, String email, String password, 
     }
   } catch (error) {
     // Handle errors
-    print('Error registering partenaire: $error');
+    print('Error registering user: $error');
   }
 }

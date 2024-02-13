@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'Services/partnerServices.dart';
+import 'Services/parentServices.dart';
 import 'success.dart';
 
-class PartnerRegistrationPage extends StatelessWidget {
+class ParentRegistrationPage extends StatelessWidget {
   final TextEditingController usernameController = TextEditingController();
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
@@ -13,7 +13,7 @@ class PartnerRegistrationPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Become a Partner Now",
+          "Register Now",
           style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
@@ -65,8 +65,7 @@ class PartnerRegistrationPage extends StatelessWidget {
               SizedBox(height: 24.0),
               ElevatedButton(
                 onPressed: () {
-    // Call the registerPartenaire function
-    registerPartenaire(
+    registerParent(
       usernameController.text.trim(),
       emailController.text.trim(),
       passwordController.text,
